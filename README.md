@@ -29,7 +29,7 @@
 |prefecture_id        |integer   |null: false|
 |scheduled_delivery_id|integer   |null: false|
 |price                |integer   |null: false|
-|user_id              |references|null: false, foreign_key: true|
+|user                 |references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -38,8 +38,8 @@
 ## purchasesテーブル
 |Column  |Type      |Options|
 |------  |----------|-------|
-|item_id |references|null: false, foreign_key: true|
-|user_id |references|null: false, foreign_key: true|
+|item    |references|null: false, foreign_key: true|
+|user    |references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :item
@@ -55,7 +55,7 @@
 |house_number  |string     |null: false|
 |building_name |string     ||
 |phone_number  |string     |null: false|
-|purchase_id   |references |null: false, foreign_key: true|
+|purchase      |references |null: false, foreign_key: true|
 
 ### Association
 - belongs_to :purchase
