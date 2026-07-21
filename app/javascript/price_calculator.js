@@ -10,7 +10,7 @@ const price = () => {
 
     const profit = inputValue - tax;
     const profitDom = document.getElementById("profit");
-    profitDom.innerHTML = profit;
+    profitDom.innerHTML = profit.toLocaleString();
   });
 };
 
