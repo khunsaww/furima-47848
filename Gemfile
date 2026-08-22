@@ -85,3 +85,4 @@ gem 'active_hash'
 gem 'jp_prefecture'
 gem "payjp"
 gem 'gon'
+gem "aws-sdk-s3", require: false
